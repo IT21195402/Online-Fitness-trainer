@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <script src='../js/javascript.js'></script>
+    <script src="https://kit.fontawesome.com/3385157f0e.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="../images/Untitled-1.png" alt="logo" class="logo">
+            <ul class="navbar">
+
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./contactus.html">CONTACT US</a></li>
+                <li><a href="./store/index.php">STORE</a></li>
+                <li>
+                    <div class="search">
+                        <div class="icon"></div>
+                        <div class="input"></div>
+                        <input type="text" placeholder="search" id="searchid" class="searchid1">
+                        <script>
+                            const icon = document.querySelector('.icon');
+                            const search = document.querySelector('.search');
+                            icon.onclick = function() {
+                                search.classList.toggle('active')
+                            }
+                        </script>
+                </li>
+                <li>
+                    <div class="cart">
+                        <button type="button" class="cartin"><i class="fa-solid fa-cart-arrow-down fa-2x icon-cog whiteiconcolor"></i></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <!--<button type="button" class="menuin" id="active"><div class="menudetails"><i id="active_sidenav" class="fa-solid fa-bars fa-2x"></i>/<div></i>--></button>
+                        <button type="button" class="btn2" onclick="openNav()" ondblclick="closeNav()">&#9776; </button>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        </div>
+
+        <!--    <div class="h1mm">
+        <h1 class="h1m">
+            MEAL PLAN
+        </h1>
+    </div>
+    -->
+
+
+
+
+
+
+
+
+        <div class="container">
+
+            <div id="mySidenav" class="home_sidnav">
+                <a href="javascript:void(0)" class="close_btn" onclick="closeNav()">&times;</a>
+                <div>
+                    <a href="./home.html">Home</a>
+                    <a href="./login.html">Login</a>
+                    <a href="./Package.html">packages</a>
+                    <a href="./blog.html">Blog</a>
+                    <a href="./activities.html">Activity</a>
+                    <a href="./mealplan.html">Meal plan</a>
+                    <a href="./store/index.php">Store</a>
+                    <a href="#">Fitness Guide</a>
+                    <a href="./contactus.html">Contact us</a>
+                </div>
+            </div>
+
+            <div class="classbody">
+                <div class="card">
+                    <div class="burnbox">
+                        <div class="details">
+                            <h1 class="h11">BUILD</h1>
+
+
+
+                            <div class="burndetails">
+
+                                <div class="BMICALC">
+
+                                    <div class="form">
+
+                                        <form action="../php/build.php" method="post">
+
+                                            <div class="input-container ic1">
+                                                <input class="input1" name="Weight" type="text" placeholder=" " />
+                                                <div class="cut"></div>
+                                                <label for="WEIGHT" class="placeholder">WEIGHT</label>
+                                            </div>
+                                            <div class="input-container ic2">
+                                                <input class="input1" type="text" name="Height" placeholder=" " />
+                                                <div class="cut"></div>
+                                                <label for="Height" class="placeholder">HEIGHT</label>
+                                            </div>
+                                            <div class="input-container ic2">
+                                                <input class="input1" type="text" name="Age" placeholder=" " />
+                                                <div class="cut cut-short"></div>
+                                                <label for="Age" class="placeholder">AGE</label>
+                                            </div>
+                                            <button type="text" class="submit" name="submit">SHOW RESULT</button>
+                                        </form>
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="burnbox">
+                        <div class="details">
+                            <h1>BURN</h1>
+                            <div class="burndetails">
+                                <div class="BMICALC">
+
+                                    <div class="form">
+
+                                        <form action="../php/burn.php" method="post">
+                                            <div class="input-container ic1">
+                                                <input id="weight" class="input1" name="Weight" type="text" placeholder=" " />
+                                                <div class="cut"></div>
+                                                <label for="WEIGHT" class="placeholder">WEIGHT</label>
+                                            </div>
+                                            <div class="input-container ic2">
+                                                <input id="height" class="input1" name="Height" type="text" placeholder=" " />
+                                                <div class="cut"></div>
+                                                <label for="lastname" class="placeholder">HEIGHT</label>
+                                            </div>
+                                            <div class="input-container ic2">
+                                                <input id="email" class="input1" name="Age" type="text" placeholder=" " />
+                                                <div class="cut cut-short"></div>
+                                                <label for="email" class="placeholder">AGE</label>
+                                            </div>
+
+                                            <button type="text" class="submit" name="submit">SHOW RESULT</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="l-footer">
+                <h1>
+                    <img src="../images/Untitled-1.png" alt=""></h1>
+                <p>
+                    Lorem ipsum dol molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae. Lorem ipsum dolor sit amet, consectetur
+                </p>
+
+                </p>
+            </div>
+            <ul class="r-footer">
+                <li>
+                    <h2 class="social1">
+                        Social</h2>
+                    <ul class="box">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Fitnesslk</a></li>
+                    </ul>
+                </li>
+                <li class="features">
+
+                    <h2 class="social1">Information</h2>
+                    <ul class="box">
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">package</a></li>
+                        <li><a href="#">Trainers</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 class="social1">
+                        Legal</h2>
+                    <ul class="box">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Return</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="b-footer">
+                <p>
+                    All rights reserved by ©FITMORE 2022 IWT ASSIGMENT </p>
+            </div>
+        </footer>
+
+</body>
+
+</html>

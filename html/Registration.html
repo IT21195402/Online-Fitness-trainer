@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--=====CSS=====-->
+    <link rel="stylesheet" href="../css/Registration.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--=====JS=====-->
+    <script src="../js/script.js"></script>
+
+    <!--=====Iconscout CSS=====-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+    <div class="header">
+        <nav>
+            <img src="../images/Untitled-1.png" alt="logo" class="logo">
+            <ul class="navbar">
+
+                <li><a href="../home/home.html">HOME</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./contactus.html">CONTACT US</a></li>
+                <li><a href="./store/index.php">STORE</a></li>
+                <li>
+                    <div class="search">
+                        <div class="icon"></div>
+                        <div class="input"></div>
+                        <input type="text" placeholder="search" id="searchid" class="searchid1">
+                        <script>
+                            const icon = document.querySelector('.icon');
+                            const search = document.querySelector('.search');
+                            icon.onclick = function() {
+                                search.classList.toggle('active')
+                            }
+                        </script>
+                </li>
+                <li>
+                    <div class="cart">
+                        <button type="button" class="cartin"><i class="fa-solid fa-cart-arrow-down fa-2x icon-cog whiteiconcolor"></i></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <!--<button type="button" class="menuin" id="active"><div class="menudetails"><i id="active_sidenav" class="fa-solid fa-bars fa-2x"></i>/<div></i>--></button>
+                        <button type="button" class="btn2" onclick="openNav()" ondblclick="closeNav()">&#9776; </button>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+        </div>
+
+
+        <div class="container_1">
+            <div class="title">Registration</div>
+            <div class="content2">
+                <form action="../PHP/sign_up.php" method="POST" autocomplete="off">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" name="fname" id="fname" required placeholder="Enter your Firstname" pattern="^[A-Z]\w*$" oninvalid="this.setCustomValidity('Please make first letter of your name as capital')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last Name</span>
+                            <input type="text" name="lname" id="lname" required placeholder="Enter your Lastname" pattern="^[A-Z]\w*$" oninvalid="this.setCustomValidity('Please make first letter of your name as capital')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="password" name="pwd" id="pwd" class="password" required placeholder="Enter your Password" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z]).{6,10}" title="Password should be of 6-10 length and should contain atleast one character and one number"></input>
+                            <i class="uil uil-eye-slash showHidePw" onclick="myFunction()"></i>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirm password</span>
+                            <input type="password" name="psw-repeat" id="psw-repeat" required placeholder="Enter your Confirm password">
+                            <i class="uil uil-eye-slash showHidePw" onclick="myFunction()"></i>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Age</span>
+                            <input type="text" name="age" id="age" required placeholder="Enter your Age">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="email" name="email" id="email" required placeholder="Enter your Email Address" oninvalid="this.setCustomValidity('Please give valid format, like @yahoo.com or @gmail.com, etc,.')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Contact Number</span>
+                            <input type="text" name="num" id="num" required placeholder="Enter your Contact Number">
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Address</span>
+                            <input type="text" name="address" id="address" required placeholder="Enter your Address">
+                        </div>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <span class="gender-title">Gender</span>
+                        <div class="category 1">
+                            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender" value="Male" name="gender">Male</span>
+          </label>
+                            <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender" value="Female" name="gender">Female</span>
+          </label>
+                        </div>
+                    </div>
+                    <div class="register-details">
+                        <input type="radio" name="register" id="dot-3">
+                        <input type="radio" name="register" id="dot-4">
+                        <span class="register-title">Register As</span>
+                        <div class="category 2">
+                            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="register">Customer</span>
+            </label>
+                            <label for="dot-4">
+              <span class="dot four"></span>
+              <span class="register" >Instructor</span>
+            </label>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" name="submit" value="Confirm and Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="l-footer">
+                <h1>
+                    <img src="../images/Untitled-1.png" alt=""></h1>
+                <p>
+                    Lorem ipsum dol molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae. Lorem ipsum dolor sit amet, consectetur
+                </p>
+
+                </p>
+            </div>
+            <ul class="r-footer">
+                <li>
+                    <h2 class="social1">
+                        Social</h2>
+                    <ul class="box">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Fitnesslk</a></li>
+
+                    </ul>
+                </li>
+                <li class="features">
+
+                    <h2 class="social1">Information</h2>
+                    <ul class="box">
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">package</a></li>
+                        <li><a href="#">Trainers</a></li>
+
+                        <li><a href="#">Customer Service</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 class="social1">
+                        Legal</h2>
+                    <ul class="box">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Return</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="b-footer">
+                <p>
+                    All rights reserved by ©FITMORE 2022 IWT ASSIGMENT </p>
+            </div>
+        </footer>
+
+</body>
+
+</html>

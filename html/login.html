@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/login.css'>
+    <script src='../js/esithajavascript.js'></script>
+    <script src="https://kit.fontawesome.com/3385157f0e.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="../images/Untitled-1.png" alt="logo" class="logo">
+            <ul class="navbar">
+
+                <li><a href="./login.html">HOME</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./login.html">CONTACT US</a></li>
+                <li><a href="./login.html">STORE</a></li>
+                <li>
+                    <div class="search">
+                        <div class="icon"></div>
+                        <div class="input"></div>
+                        <input type="text" placeholder="search" id="searchid" class="searchid1">
+                        <script>
+                            const icon = document.querySelector('.icon');
+                            const search = document.querySelector('.search');
+                            icon.onclick = function() {
+                                search.classList.toggle('active')
+                            }
+                        </script>
+                </li>
+                <!--<li>
+                    <div class="cart">
+                        <button type="button" class="cartin"><i class="fa-solid fa-cart-arrow-down fa-2x icon-cog whiteiconcolor"></i></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <button type="button" class="menuin" id="active"><div class="menudetails"><i class="fa-solid fa-bars fa-2x"></i></div></i></button>
+
+                    </div>-->
+                </li>
+
+            </ul>
+        </nav>
+        </div>
+
+
+
+        <div class="loginform">
+            <div><img src="../images/91517161ef6662b253b4568043cbec2e.gif" class="image" alt="AD" style="width:15%;"></div>
+            <div class="loginform1">
+                <div class="loginform2">
+                    <div class="loginform3">
+                        <div class="loginform4">
+                            <h1 class="h1">LOGIN</h1>
+                            </br>
+                            </br>
+                            </br>
+                            </br>
+                            </br>
+                            </br>
+                            <form method="POST" action="../php/esithalogin.php">
+
+                                <div class="datainput">
+                                    <p><label for="Uname" class="label-of-inputs"><b>Username (Email)</b></label></p>
+                                    <p><input type="email" placeholder="example@ex.com" name="UN" id="Uname" class="inputbar" required></p>
+                                    </br>
+                                </div>
+
+                                <div class="datainput">
+                                    <p><label for="psw" class="label-of-inputs"><b>Password</b></label></p>
+                                    <p><input type="password" placeholder="------------" name="PW" id="Pass" class="inputbar" required></p>
+
+                                </div>
+
+                            </form>
+
+                            <label>
+                                    <input type="checkbox" name="item" id="label">Remember me</input></br></br>
+                                    
+                                </label>
+                            <a id="forgetpass" href="./contactus.html">Forgot Password ?</a></br>
+                            <p>
+                                <input type="submit" value="Login" name="Submit" class="loginbutton" onclick="validate()"></a>
+                            </p>
+                            </br>
+                            </br>
+                            </br>
+                            <p>Are you a New User? <a id="signup" href="./Registration.html">Sign Up Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="l-footer">
+                <h1>
+                    <img src="../images/Untitled-1.png" alt=""></h1>
+                <p>
+                    Lorem ipsum dol molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae. Lorem ipsum dolor sit amet, consectetur
+                </p>
+
+                </p>
+            </div>
+            <ul class="r-footer">
+                <li>
+                    <h2 class="social1">
+                        Social</h2>
+                    <ul class="box">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Fitnesslk</a></li>
+                    </ul>
+                </li>
+                <li class="features">
+
+                    <h2 class="social1">Information</h2>
+                    <ul class="box">
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">package</a></li>
+                        <li><a href="#">Trainers</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 class="social1">
+                        Legal</h2>
+                    <ul class="box">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Return</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="b-footer">
+                <p>
+                    All rights reserved by ©FITMORE 2022 IWT ASSIGMENT </p>
+            </div>
+        </footer>
+
+</body>
+
+</html>
